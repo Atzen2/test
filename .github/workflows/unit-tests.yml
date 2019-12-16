@@ -6,7 +6,7 @@ on:
       - master
     
 jobs:
-  build-and-test:
+  buildAndTest:
 
     runs-on: ubuntu-18.04
 
