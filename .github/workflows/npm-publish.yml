@@ -46,7 +46,7 @@ jobs:
           scope: atz3n
       
       - name: Set up package version
-        run: &&
+        run: |
           echo ::set-env name=RELEASE_VERSION::$(echo ${GITHUB_REF:10})
           npm --no-git-tag-version version $RELEASE_VERSION
           cat package.json
