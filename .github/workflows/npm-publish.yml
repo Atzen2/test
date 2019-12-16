@@ -60,18 +60,3 @@ jobs:
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
-        
-#      - uses: actions/checkout@v1
-#      - uses: actions/setup-node@v1
-#        with:
-#          node-version: 12
-#          registry-url: https://npm.pkg.github.com/
-#          scope: atz3n
-#      - run: echo ::set-env name=RELEASE_VERSION::$(echo ${GITHUB_REF:10})
-#      - run: npm --no-git-tag-version version $RELEASE_VERSION
-#      - run: npm ci
-#      - run: npm run build
-#      - run: npm publish
-#        env:
-#          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
