@@ -7,7 +7,9 @@
     "test": "npm run test-browser && npm run test-node",
     "test-node": "jest --testEnvironment=node",
     "test-browser": "jest --testEnvironment=jsdom",
-    "build": "rm -rf dist && tsc"
+    "build": "rm -rf dist && tsc",
+    "test-build-node": "jest --rootDir=dist --testEnvironment=node",
+    "test-build-browser": "jest --rootDir=dist --testEnvironment=jsdom"
   },
   "repository": {
     "type": "git",
