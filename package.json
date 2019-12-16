@@ -1,7 +1,7 @@
 {
   "name": "@atz3n/test",
-  "version": "1.0.7",
-  "description": "testste",
+  "version": "1.0.0",
+  "description": "just a github action npm package test",
   "main": "dist/index.js",
   "scripts": {
     "test": "npm run test-browser && npm run test-node",
