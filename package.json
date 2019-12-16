@@ -1,7 +1,7 @@
 {
-  "name": "@atz3n/test",
+  "name": "@atz3n/actions-npm-playground",
   "version": "1.0.0",
-  "description": "just a github action npm package test",
+  "description": "just a github actions npm playground",
   "main": "dist/index.js",
   "scripts": {
     "test": "npm run test-browser && npm run test-node",
@@ -11,14 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atz3n/test.git"
+    "url": "git+https://github.com/atz3n/actions-npm-playground.git"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/atz3n/test/issues"
-  },
-  "homepage": "https://github.com/atz3n/test#readme",
   "devDependencies": {
     "typescript": "^3.6.4",
     "@types/jest": "^24.0.18",
