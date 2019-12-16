@@ -26,8 +26,8 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: atz3n
       - run: echo ::set-env name=RELEASE_VERSION::$(echo ${GITHUB_REF:10})
-      - run: npm ci
       - run: npm version $RELEASE_VERSION
+      - run: npm ci
       - run: npm run build
       - run: npm publish
         env:
