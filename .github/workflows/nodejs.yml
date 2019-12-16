@@ -31,10 +31,6 @@ jobs:
 
     - name: test node.js
       run: npm run test-build-node
-      env:
-        CI: true
 
     - name: test browser
       run: npm run test-build-browser
-      env:
-        CI: true
