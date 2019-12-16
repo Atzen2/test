@@ -2,7 +2,7 @@
   "name": "actions-npm-playground",
   "version": "1.0.0",
   "description": "just a github actions npm playground",
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
   "scripts": {
     "test": "npm run test-browser && npm run test-node",
     "test-node": "jest --testEnvironment=node",
