@@ -15,10 +15,10 @@ jobs:
         node-version: [8.x, 10.x, 12.x]
 
     steps:
-    - name: Checkout project
+    - name: Check out project
       uses: actions/checkout@v1
       
-    - name: Setup Node.js ${{ matrix.node-version }}
+    - name: Set up Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
@@ -31,8 +31,8 @@ jobs:
     - name: Build project
       run: npm run build
 
-    - name: Test for Node.js
+    - name: Run tests for Node.js
       run: npm run test-build-node
 
-    - name: Test for browser
+    - name: Run test for browser
       run: npm run test-build-browser
