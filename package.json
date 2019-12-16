@@ -1,5 +1,5 @@
 {
-  "name": "@atz3n/actions-npm-playground",
+  "name": "actions-npm-playground",
   "version": "1.0.0",
   "description": "just a github actions npm playground",
   "main": "dist/index.js",
