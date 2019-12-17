@@ -28,6 +28,7 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
+    "@somedotone/ardor-ts": "^2.2.2",
     "bip39": "^3.0.2"
   }
 }
