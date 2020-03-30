@@ -25,7 +25,6 @@
     "ts-jest": "^24.1.0"
   },
   "dependencies": {
-    "@somedotone/ardor-ts": "^2.2.2",
     "bip39": "^3.0.2"
   }
 }
