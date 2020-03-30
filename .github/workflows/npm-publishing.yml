@@ -42,6 +42,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12
+          
+      - name: Authenticate with GitHub package registry
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
         
       - name: Get package version
         run: echo ::set-env name=RELEASE_VERSION::$(echo ${GITHUB_REF:10})
@@ -57,5 +60,5 @@ jobs:
       
       - name: Create and publish package
         run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        #env:
+          #NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
