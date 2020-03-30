@@ -25,6 +25,7 @@
     "ts-jest": "^24.1.0"
   },
   "dependencies": {
+    "@blobaa/ardor-ts": "^2.4.1",
     "bip39": "^3.0.2"
   }
 }
