@@ -60,5 +60,5 @@ jobs:
       
       - name: Create and publish package
         run: npm publish
-        #env:
-          #NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
